@@ -16,8 +16,11 @@ using namespace std;
 class Money
 {
 private:
+    stringstream st;
     double total;
     int hundreds, tens, fives, ones, quarters, dimes, nickels, cents;
+    void reset();
+    void toChangeFormat(double change);
 public:
     string toString();
     string toCurrency(double amount);

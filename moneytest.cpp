@@ -20,6 +20,7 @@ int main(int argv, char **argc)
     //
     // read each command and call the appropriate Money method
     //
+    cout << "Command: ";
     cin >> command;
     while (!cin.eof()) {
         //
@@ -38,7 +39,8 @@ int main(int argv, char **argc)
         else {
             cout << "invalid command: " + command;
             return 1;
-        } 
+        }
+        cout << "\nCommand: ";
         cin >> command;
     }
 }
